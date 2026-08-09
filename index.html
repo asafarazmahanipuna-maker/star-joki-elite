@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>STAR JOKI ELITE</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="topbar"><a class="brand" href="#"><span>STAR</span> JOKI <b>ELITE</b></a><nav><a href="#layanan">LAYANAN</a><a href="#order">ORDER</a><a href="#cek">CEK ANTRIAN</a><a class="owner-link" href="owner.html">OWNER</a></nav></header>
+<main>
+<section class="hero"><div class="hero-copy"><p class="eyebrow">JOKI KONTAK • ONLINE</p><h1>STAR JOKI<br><span>ELITE</span></h1><p class="lead">Pilih paket, lakukan pembayaran, lalu upload bukti pembayaran di bagian bawah form order. Setelah dikirim, sistem memberikan nomor dan kode antrian otomatis.</p><div class="hero-actions"><a class="btn primary" href="#layanan">PILIH PAKET</a><a class="btn ghost" href="#cek">CEK ANTRIAN</a></div></div><div class="hero-art"><img src="hero.png" alt="STAR JOKI ELITE"></div></section>
+
+<section id="layanan" class="section"><div class="section-title"><p class="eyebrow">LIST JOKI KONTAK</p><h2>Pilih Paket</h2></div>
+<div class="cards">
+<article class="card"><div class="tag">BIASA</div><h3>Joki Kontak Biasa</h3><div class="plans">
+<button class="plan" data-name="Joki Kontak Biasa" data-price="500" data-duration="1H + SW + ALL GB"><b>500P</b><span>1H + SW + ALL GB</span></button>
+<button class="plan" data-name="Joki Kontak Biasa" data-price="1000" data-duration="2H + SW + ALL GB"><b>1K</b><span>2H + SW + ALL GB</span></button>
+<button class="plan" data-name="Joki Kontak Biasa" data-price="2000" data-duration="3H + SW + ALL GB"><b>2K</b><span>3H + SW + ALL GB</span></button>
+<button class="plan" data-name="Joki Kontak Biasa" data-price="3000" data-duration="4H + SW + ALL GB"><b>3K</b><span>4H + SW + ALL GB</span></button>
+</div></article>
+<article class="card"><div class="tag">MINGGUAN</div><h3>Joki Mingguan</h3><div class="plans">
+<button class="plan" data-name="Joki Mingguan" data-price="5000" data-duration="1 MINGGU"><b>5K</b><span>1 MINGGU</span></button>
+<button class="plan" data-name="Joki Mingguan" data-price="10000" data-duration="2 MINGGU"><b>10K</b><span>2 MINGGU</span></button>
+</div></article>
+<article class="card featured"><div class="tag">MANEN</div><h3>Joki Manen</h3><div class="plans"><button class="plan" data-name="Joki Manen" data-price="15000" data-duration="TEBAR SETIAP HARI"><b>15K</b><span>TEBAR SETIAP HARI</span></button></div></article>
+</div></section>
+
+<section id="order" class="section"><div class="section-title"><p class="eyebrow">ORDER ONLINE</p><h2>Bayar → Upload → Kirim</h2></div>
+<form id="orderForm" class="order-grid">
+<div class="panel">
+<label>Paket dipilih</label><input id="package" readonly placeholder="Pilih paket di atas"><input id="duration" type="hidden"><input id="price" type="hidden">
+<label>Nama / Username</label><input id="customer" required placeholder="Nama / username">
+<label>Nomor WhatsApp</label><input id="phone" required placeholder="08xxxxxxxxxx">
+<label>Catatan order</label><textarea id="note" rows="3" placeholder="Catatan jika ada"></textarea>
+</div>
+<div class="panel">
+<h3 style="font-family:'Barlow Condensed';font-size:30px;margin:0 0 12px">1. Lakukan Pembayaran</h3>
+<div class="paybox"><div class="payrow"><span>DANA</span><b>08976076500</b></div><div class="payrow"><span>GO-PAY</span><b>08976076500</b></div><div class="qris"><a href="https://ibb.co.com/9kqcvKDQ" target="_blank" rel="noopener">BUKA / LIHAT QRIS</a></div></div>
+<h3 style="font-family:'Barlow Condensed';font-size:30px;margin:24px 0 8px">2. Upload Bukti Pembayaran</h3>
+<p class="proof-note">Setelah melakukan pembayaran, upload bukti pembayaran di sini. <b>Wajib</b> sebelum order dikirim.</p>
+<input id="proof" type="file" accept="image/jpeg,image/png,image/webp" required>
+<button id="send" class="btn primary wide" style="margin-top:14px" type="submit">KIRIM ORDER</button>
+<p class="mini">Bukti pembayaran akan disimpan di penyimpanan online website untuk dilihat owner. Gambar akan dikompres otomatis agar upload lebih ringan.</p>
+</div>
+</form><div id="success" class="success hidden"></div></section>
+
+<section id="cek" class="section"><div class="section-title"><p class="eyebrow">TRACKING ONLINE</p><h2>Cek Antrian</h2></div><div class="checker"><input id="code" placeholder="Contoh: SJE-A1B2C3D4"><button id="search" class="btn primary">CARI</button></div><div id="result" class="result hidden"></div></section>
+<section class="section"><div class="section-title"><p class="eyebrow">CARA ORDER</p><h2>4 Langkah</h2></div><div class="step-grid"><div class="step"><b>01</b><h3>Pilih Paket</h3><p>Pilih paket joki sesuai kebutuhan.</p></div><div class="step"><b>02</b><h3>Bayar</h3><p>DANA, GO-PAY, atau QRIS.</p></div><div class="step"><b>03</b><h3>Upload Bukti</h3><p>Upload bukti pembayaran lalu klik KIRIM ORDER.</p></div><div class="step"><b>04</b><h3>Cek Kode</h3><p>Simpan kode antrian untuk melihat status kapan saja.</p></div></div></section>
+</main>
+<footer><div><b>STAR JOKI ELITE</b> • Joki Kontak</div><a href="https://wa.me/628976076500" target="_blank">CS: +628976076500</a></footer>
+<script src="app.js"></script></body></html>

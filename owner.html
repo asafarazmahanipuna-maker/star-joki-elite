@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Owner — STAR JOKI ELITE</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="topbar"><a class="brand" href="index.html"><span>STAR</span> JOKI <b>ELITE</b></a><nav><a href="index.html">WEB PELANGGAN</a></nav></header>
+<div id="loginView" class="login-wrap"><div class="section-title"><p class="eyebrow">OWNER PANEL</p><h1>LOGIN OWNER</h1></div><div class="login-box"><label style="display:block;color:#aaa;font-size:10px;font-weight:800;margin-bottom:7px">PASSWORD OWNER</label><input id="password" type="password" placeholder="Masukkan password"><button id="login" class="btn primary wide" style="margin-top:12px">LOGIN</button><p id="loginMsg" class="mini"></p></div></div>
+<main id="dashboard" class="owner-main hidden"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap"><div class="section-title"><p class="eyebrow">OWNER DASHBOARD</p><h1>ANTRIAN ORDER</h1></div><button id="logout" class="btn ghost">LOGOUT</button></div>
+<div class="stats"><div class="stat"><span>TOTAL</span><b id="total">0</b></div><div class="stat"><span>MENUNGGU</span><b id="waiting">0</b></div><div class="stat"><span>DIPROSES</span><b id="processing">0</b></div><div class="stat"><span>SELESAI</span><b id="done">0</b></div></div>
+<div class="owner-toolbar"><input id="filter" placeholder="Cari kode / nama / nomor..."><button id="refresh" class="btn ghost">REFRESH</button></div><div id="orders" class="owner-list"></div></main>
+<script src="owner.js"></script></body></html>
